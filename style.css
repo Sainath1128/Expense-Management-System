@@ -1,0 +1,174 @@
+body {
+    font-family: 'Roboto',sans-serif;
+    background-color: #e0f7fa;
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+h1 {
+    color: #00796b;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+input[type="text"], input[type = "number"], select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #b2dfdb;
+    border-radius: 6px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00796b;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 16px;
+
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+.hidden {
+    display: none;
+}
+
+#groupList, #expenseList {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#balance {
+    margin-bottom: 20px;
+}
+
+.group-item {
+    display: flex;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    position: relative;
+}
+
+.group-button {
+    background-color: #f0f8ff; /* Light blue background */
+    border: 2px solid #87ceeb; /* Light blue border */
+    color: #333; /* Dark text color for readability */
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.group-button:hover {
+    background-color: #87ceeb; /* Slightly darker blue on hover */
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.group-button strong {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.group-friends {
+    font-size: 14px;
+    color: #666;
+}
+
+.delete-button {
+    background-color: #bab7b7; /* Light gray background */
+    border: none;
+    color: white;
+    padding: 2px 6px; /* Smaller padding for a compact size */
+    font-size: 12px; /* Smaller font size */
+    border-radius: 50%; /* Circular button */
+    cursor: pointer;
+    margin-left: 10px;
+    width: 24px; /* Set width */
+    height: 24px; /* Set height */
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #7c7272; /* Darker red on hover */
+}
+
+.expense-item {
+    background-color: #f0f8ff; /* Light blue background */
+    border: 2px solid #87ceeb; /* Light blue border */
+    color: #333; /* Dark text color for readability */
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+    box-sizing: border-box; /* Ensures padding is included within the width */
+}
+
+
+.expense-item .expense-detail {
+    font-size: 14px;
+    color: #666;
+}
+
+#balance {
+    margin-top: 20px;
+    text-align: left;
+    background-color: #f0f8ff;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #87ceeb;
+    color: #333;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.expense-name {
+    flex: 1;
+    text-align: left;
+    font-weight: bold;
+}
+
+.expense-details {
+    text-align: right;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
